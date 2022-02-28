@@ -54,7 +54,7 @@ int main(void){
     while (1) {
         if (milis() - timeA > 333){
             timeA=milis();
-            adc_value = ADC_get(ADC2_CHANNEL_2); // do adc_value ulož výsledek převodu vstupu ADC_IN6 (PB6)
+            adc_value = ADC_get(ADC2_CHANNEL_2); // do adc_value ulož výsledek převodu vstupu ADC_IN2 (PB2)
             voltage = ((uint32_t)adc_value*5000 + 512)/1024;
             teplota_1_cast=voltage/10;//celočíselná část
             teplota_2_cast=voltage%10;//desetinná část
